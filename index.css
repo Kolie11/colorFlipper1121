@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in .8s;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+   
+}
+
+span{
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+}
+.myName {
+    color: #fff;
+    font-size: 1.5rem;
+    padding-bottom:25px ;
+    font-weight: bold;
+}
+.toggle-power{
+display: block;
+margin: auto;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+background-color: red;
+box-shadow: 2px 2px 2px;
+transition: ease-in-out .7s;
+}
+
+.toggle-power:hover{
+    transform: scaleY(0.5);
+    border-radius: 20%;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.btn-container div button {
+    margin: 20px;
+    width: 150px;
+    height: 65px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px black;
+    transition: all ease-in .6s;
+}
+
+.btn-container div button:hover{
+    border-radius: 5px 15px;
+
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+    color: whitesmoke;
+}
+
+.green {
+    background-color: green;
+}
+
+
+
+.fa-linkedin{
+    font-size: 3rem;
+    text-decoration: none;
+padding: 0 2px;
+  color: #0077B5;
+background-color: #fff;
+border-radius: 5px;
+}
+
+footer{
+    position: fixed;
+    bottom: 150px;
+}
+
+@media (max-width :840px){
+    footer{
+        position: fixed;
+        top: 80px;
+    }
+
+    .btn-container div button {
+        margin: 20px;
+        width: 100px;
+        height: 50px;
+        border-radius: 6px;
+        box-shadow: 1px 1px 1px black;
+        transition: all ease-in .6s;
+    }
+
+    .green {
+        background-color: green;
+        color: #fff;
+    }
+}
